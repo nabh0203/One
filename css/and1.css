@@ -1,0 +1,28 @@
+section{width: 100%;background-color: black; color: white;font-family: "Pretendard Variable";font-weight:300;color: white;}
+.title{width: 90%;font-weight: 800;padding: 10% 5% 5% 5%; font-size: 3rem; text-align: center;line-height: 2rem;}
+#sub{font-size: 0.8rem; font-weight: 500;padding: 8% 0 0 0 ;}
+.container{width: 90%; padding: 5%;overflow: hidden;}
+.content{width:100%;display: flex;}
+#main_img{width: 40%;}
+#main_text{width: 100%;font-weight: 500; padding-left: 5%; font-size: 0.9rem;}
+#sub_text{width: 80%;font-weight: 600; font-size: 0.82rem; padding: 10%;text-align: center;}
+
+
+/* 태블릿 */
+@media all and (min-width: 744px){
+    .title{font-size: 6rem; padding-top: 10%;}
+    #sub{font-size: 1.3rem;}
+    #main_text{font-size: 1.5rem;line-height:2.2rem;}
+    #sub_text{font-size: 2rem;line-height:2.5rem;}
+}
+/* PC */
+@media all and (min-width: 1024px){
+    .title{font-size: 8rem;}
+    #sub{font-size: 2rem;line-height:2.7rem;}
+    .container{width: 90%;display: flex;}
+    .container:nth-child(even){flex-direction: row-reverse;}
+    .container:nth-child(even) .content{flex-direction: row-reverse;}
+    #main_text{width: 100%; padding: 5%;font-size: 1rem;line-height:2.7rem;}
+    #sub_text{width: 35.5%; font-size: 1rem; padding:10% 0 0 0;}
+    #main_img{width: 100%;}
+}
